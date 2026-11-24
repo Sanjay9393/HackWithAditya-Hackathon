@@ -6,7 +6,6 @@ interface BadgeProps {
   size?: 'sm' | 'md';
   className?: string;
 }
-
 export const Badge: React.FC<BadgeProps> = ({
   children,
   variant = 'default',
