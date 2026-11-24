@@ -19,7 +19,20 @@ PrajaAI is designed not merely as a conversational chatbot, but as an **integrat
 
 ---
 
-## 2. Key Modules & Features
+## 2. Engineering Team & Hackathon Contributors
+
+| Team Member | Role & Module | GitHub Profile |
+| :--- | :--- | :--- |
+| **Sanjay** | Frontend Lead, App Shell, Branding & Analytics Dashboard | [@sanjay9393](https://github.com/sanjay9393) |
+| **Jyothi** | Schemes Discovery & Rule Engine Evaluator | [@Jyothi006](https://github.com/Jyothi006) |
+| **Sadvika Pabolu** | Civic Grievances, Duplicate Redressal & Leaflet GIS Map | [@SadvikaPabolu](https://github.com/SadvikaPabolu) |
+| **Bharath Kishor** | Multilingual AI Assistant, Gemini RAG & Document Intelligence | [@bharathkishor864](https://github.com/bharathkishor864) |
+| **Srikanth** | Backend Lead, Database Architecture, Models & Security | [@SRIKANTH-06-02](https://github.com/SRIKANTH-06-02) |
+| **Ravi Prakash Badugu** | Farmer Center, APMC Market Rates & MGNREGA Employment | [@raviprakashbadugu](https://github.com/raviprakashbadugu) |
+
+---
+
+## 3. Key Modules & Features
 
 | Module | Feature Capabilities |
 | :--- | :--- |

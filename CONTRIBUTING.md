@@ -6,16 +6,14 @@ This guide documents the monorepo Git workflow, module division, and development
 
 ## 1. Team Role & Module Division
 
-To prevent overlapping edits and merge conflicts, each member owns a dedicated module slice:
-
-| Role | Primary Responsibilities | Main Directories & Files |
-| :--- | :--- | :--- |
-| **Member 1 (Frontend Lead)** | App shell, navigation, design system, dashboard KPIs, responsive layouts. | `frontend/src/components/layout/`, `frontend/src/pages/DashboardPage.tsx`, `frontend/src/components/common/` |
-| **Member 2 (Schemes & Welfare)** | Scheme discovery catalog, eligibility evaluation engine, document readiness checklist, comparison matrix. | `frontend/src/pages/Schemes*.tsx`, `frontend/src/pages/SchemeDetailPage.tsx`, `backend/app/api/schemes.py`, `backend/app/services/rule_engine.py` |
-| **Member 3 (Civic & Village Operations)** | Civic issue reporting, Leaflet GIS village map, announcements marquee, Gram Sabha meeting intelligence. | `frontend/src/pages/CivicIssuesPage.tsx`, `frontend/src/pages/MapPage.tsx`, `frontend/src/pages/AnnouncementsPage.tsx`, `frontend/src/pages/GramSabhaPage.tsx`, `backend/app/api/issues.py`, `backend/app/api/meetings.py` |
-| **Member 4 (Backend & Database Lead)** | Core FastAPI routing, database schema migrations, JWT security, auth endpoints, village works & budget APIs. | `backend/app/models/`, `backend/app/database/`, `backend/app/auth/`, `backend/app/api/projects.py`, `backend/app/api/budgets.py` |
-| **Member 5 (AI / ML Engineer)** | Multilingual RAG assistant, Google Gemini SDK integration, voice STT/TTS audio hooks, AI duplicate complaint detector, document OCR parser. | `backend/app/ai/`, `backend/app/api/ai.py`, `frontend/src/pages/AIAssistantPage.tsx`, `frontend/src/pages/DocumentIntelligencePage.tsx` |
-| **Member 6 (DevOps & Farmer/Work Services)** | Farmer Intelligence, APMC market prices, MGNREGA employment, unit/integration testing, Docker, Vercel/Render deployments. | `frontend/src/pages/FarmersPage.tsx`, `frontend/src/pages/EmploymentPage.tsx`, `frontend/src/pages/ServicesPage.tsx`, `backend/app/api/agriculture.py`, `backend/app/api/employment.py`, `backend/tests/` |
+| Member | GitHub Handle | Primary Responsibilities | Main Directories & Files |
+| :--- | :--- | :--- | :--- |
+| **Sanjay** | [@sanjay9393](https://github.com/sanjay9393) | Frontend Lead, app shell, navigation, village emblem logo, welcome screen, and analytics dashboard. | `frontend/src/components/layout/`, `frontend/src/components/common/`, `frontend/src/pages/DashboardPage.tsx` |
+| **Jyothi** | [@Jyothi006](https://github.com/Jyothi006) | Scheme discovery catalog, eligibility evaluation engine, document readiness checklist, comparison matrix. | `frontend/src/pages/Schemes*.tsx`, `backend/app/api/schemes.py`, `backend/app/services/rule_engine.py` |
+| **Sadvika Pabolu** | [@SadvikaPabolu](https://github.com/SadvikaPabolu) | Civic issue reporting, duplicate detection algorithm, Leaflet GIS village map, announcements, and Gram Sabha. | `frontend/src/pages/CivicIssuesPage.tsx`, `frontend/src/pages/MapPage.tsx`, `frontend/src/pages/AnnouncementsPage.tsx`, `frontend/src/pages/GramSabhaPage.tsx`, `backend/app/api/issues.py` |
+| **Bharath Kishor** | [@bharathkishor864](https://github.com/bharathkishor864) | Multilingual RAG assistant, Google Gemini integration, voice STT/TTS audio hooks, and document OCR intelligence. | `backend/app/ai/`, `backend/app/api/ai.py`, `frontend/src/pages/AIAssistantPage.tsx`, `frontend/src/pages/DocumentIntelligencePage.tsx` |
+| **Srikanth** | [@SRIKANTH-06-02](https://github.com/SRIKANTH-06-02) | Backend Lead, core FastAPI routing, database schema migrations, JWT security, auth endpoints, village works & budget APIs. | `backend/app/models/`, `backend/app/database/`, `backend/app/auth/`, `backend/app/api/projects.py`, `backend/app/api/budgets.py` |
+| **Ravi Prakash Badugu** | [@raviprakashbadugu](https://github.com/raviprakashbadugu) | Farmer Intelligence, APMC market prices, MGNREGA employment, services directory, and automated test suite. | `frontend/src/pages/FarmersPage.tsx`, `frontend/src/pages/EmploymentPage.tsx`, `frontend/src/pages/ServicesPage.tsx`, `backend/app/api/agriculture.py`, `backend/app/api/employment.py` |
 
 ---
 
