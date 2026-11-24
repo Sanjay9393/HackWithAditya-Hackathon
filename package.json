@@ -1,0 +1,10 @@
+{
+  "name": "prajaai",
+  "version": "1.0.0",
+  "description": "PrajaAI — Smart Village AI Platform",
+  "scripts": {
+    "start": "start.bat",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build"
+  }
+}

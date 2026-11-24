@@ -1,0 +1,73 @@
+# PrajaAI Root .gitignore — For 6-Member Team Collaboration
+
+# ===============================
+# Environment & Secrets (NEVER COMMIT)
+# ===============================
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+frontend/.env.local
+backend/uploads/
+uploads/
+
+# ===============================
+# Python & Virtual Environments
+# ===============================
+.venv/
+venv/
+ENV/
+env/
+backend/.venv/
+__pycache__/
+*/__pycache__/
+backend/**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+backend/.pytest_cache/
+.coverage
+htmlcov/
+*.log
+backend/*.log
+backend/server.log
+backend/server_error.log
+
+# ===============================
+# SQLite Local Databases
+# (Auto-generated on startup by seed_data.py)
+# ===============================
+*.db
+*.sqlite
+*.sqlite3
+backend/prajaai.db
+backend/*.db
+
+# ===============================
+# Node.js & Frontend Build Outputs
+# ===============================
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+*.local
+tsconfig.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+.eslintcache
+
+# ===============================
+# IDE & Operating System
+# ===============================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+Desktop.ini
